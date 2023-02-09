@@ -41,10 +41,10 @@ services:
       KAFKA_CONFLUENT_BALANCER_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
-    dns:
-      - "8.8.8.8"
-      - "1.0.0.1"
-      - "1.1.1.1"
+    # dns:
+    #   - "8.8.8.8"
+    #   - "1.0.0.1"
+    #   - "1.1.1.1"
 
   schema-registry:
     image: confluentinc/cp-schema-registry:7.2.1
