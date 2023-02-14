@@ -85,11 +85,26 @@ services:
     ...
 ```
 
-## Start the Cluster
+## :zap: Start the Cluster
 
 To start the cluster, start by cloning the repo; and `cd` into the repository, locally.
+
+:warning: Make sure that ports that will be mapped from localhost are not already used; and that you do not have running containers with same names as the ones defined in our [docker-compose.yaml](https://github.com/theodorecurtil/kafka_101/blob/main/docker-compose.yaml) file.
 
 ```console
 git clone git@github.com:theodorecurtil/kafka_101.git
 cd kafka_101
 ```
+
+To start the cluster, simply run the command
+
+```console
+docker-compose up -d
+```
+
+Depending on the Docker version you have, the command might be
+
+```console
+docker compose up -d
+```
+
