@@ -1,6 +1,6 @@
 We show how to run a local Kafka cluster using [Docker](https://www.docker.com/) containers. We will also show how to produce and consume events from Kafka using the CLI.
 
-## The Infrastructure
+## :desktop_computer: The Infrastructure
 
 The cluster is set up using [Confluent](https://hub.docker.com/u/confluentinc) images. In particular, we set up 4 services:
 
