@@ -39,6 +39,10 @@ services:
 
 ### Kafka Server
 
+We configure a single Kafka broker with sensible defaults.
+
+Details about the configuration can be found on [Confluent website](https://docs.confluent.io/platform/current/installation/docker/config-reference.html#confluent-enterprise-ak-configuration); and all configurations can be found [here](https://docs.confluent.io/platform/current/installation/configuration/broker-configs.html#ak-broker-configurations-for-cp).
+
 ```
 version: '3.3'
 services:
@@ -79,4 +83,13 @@ services:
     ...
   control-center:
     ...
+```
+
+## Start the Cluster
+
+To start the cluster, start by cloning the repo; and `cd` into the repository, locally.
+
+```console
+git clone git@github.com:theodorecurtil/kafka_101.git
+cd kafka_101
 ```
