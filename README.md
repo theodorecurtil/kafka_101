@@ -123,3 +123,5 @@ control-center      confluentinc/cp-enterprise-control-center:7.2.1   "/etc/conf
 schema-registry     confluentinc/cp-schema-registry:7.2.1             "/etc/confluent/dock…"   schema-registry     9 seconds ago       Up 7 seconds        0.0.0.0:8081->8081/tcp, :::8081->8081/tcp
 zookeeper           confluentinc/cp-zookeeper:7.2.1                   "/etc/confluent/dock…"   zookeeper           9 seconds ago       Up 7 seconds        2888/tcp, 0.0.0.0:2181->2181/tcp, :::2181->2181/tcp, 3888/tcp
 ```
+
+You should now be able to access the `control-center` container, which is the Confluent UI for Kafka cluster management on [localhost:9021](http://localhost:9021/).
