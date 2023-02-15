@@ -179,3 +179,22 @@ This command will produce 2 messages to the topic `my-amazing-topic` without a k
 One can see that the messages were produced to the topic and are persisted in the topic by navigating to the `Topics` tab.
 
 ![](./pictures/messages_produced.png)
+
+### Consume from the Topic
+
+The final step is to consume the messages we just produced, from the topic. To do that, type the following command from within the container
+
+```console
+[appuser@broker ~]$ kafka-console-consumer --bootstrap-server localhost:9092 --topic my-amazing-topic --from-beginning
+foo
+bar
+```
+
+## Kill the Cluster
+
+Once you have played enough with your Kafka cluster, you might want to bring it down. To do this, `cd` into this project repo again and docker-compose down the infrastructure.
+
+```console
+cd kafka_101
+docker-compose down
+```
