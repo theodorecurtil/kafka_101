@@ -108,3 +108,11 @@ Depending on the Docker version you have, the command might be
 docker compose up -d
 ```
 
+To check that all services are started, type the command
+
+```console
+docker-compose ps
+```
+
+The output should be
+
