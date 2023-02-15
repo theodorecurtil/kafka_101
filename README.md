@@ -173,3 +173,9 @@ Now that we have a topic created with a default configuration, we can start prod
 >foo
 >bar
 ```
+
+This command will produce 2 messages to the topic `my-amazing-topic` without a key, and with values `foo` and `bar`, some strings.
+
+One can see that the messages were produced to the topic and are persisted in the topic by navigating to the `Topics` tab.
+
+![](./pictures/messages_produced.png)
