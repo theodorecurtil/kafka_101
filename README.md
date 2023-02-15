@@ -127,3 +127,41 @@ zookeeper           confluentinc/cp-zookeeper:7.2.1                   "/etc/conf
 You should now be able to access the `control-center` container, which is the Confluent UI for Kafka cluster management on [localhost:9021](http://localhost:9021/).
 
 > :building_construction: MAYBE MAKE A TOUR OF THE UI
+
+## Produce and Consume Messages using the CLI
+
+With Kafka, there are the notions of [Producers](https://docs.confluent.io/platform/current/clients/producer.html) and [Consumers](https://docs.confluent.io/platform/current/clients/consumer.html). Simply put, producers are client applications writing data to the cluster, and consumers are applications reading data from the cluster. Consumers are ultimately doing the work from the data they read (e.g. a Flink application would be a consumer).
+
+Confluent provides CLI tools to produce and consume messages from the command line. In this section, we will see the following:
+
+1. Create a topic
+2. Write (produce) to the topcic
+3. Read (consume) from the topic
+
+To access the CLI tools, we need to enter the `broker` container.
+
+```console
+docker exec -it broker bash
+```
+
+### Create a Topic
+
+For this example, we will create a simple topic in the cluster, with default configurations. We will create a topic named `my-amazing-topic` with a replication factor of 1 and a partitioning of 1. This means that messages will be not be replicated (1 message is only stored in one server) and will not be partitioned (1 partition is same as no partitioning). This means that the topic will be sharded in 1 log.
+
+To instantiate this topic; run the following command from within the `broker` container
+
+```console
+kafka-topics --bootstrap-server localhost:9092 --create --topic my-amazing-topic --partitions 1 --replication-factor 1
+```
+
+If the command succeeds, it will output
+
+```console
+Created topic my-amazing-topic.
+```
+
+One can also check that the topic was successfully created by navigating to the Topics tab of the web UI; where the newly created topic should be listed with the *Healthy* status.
+
+![](./pictures/topic_created.png)
+
+### Produce to the Topic
