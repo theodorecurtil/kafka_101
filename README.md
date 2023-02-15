@@ -165,3 +165,11 @@ One can also check that the topic was successfully created by navigating to the 
 ![](./pictures/topic_created.png)
 
 ### Produce to the Topic
+
+Now that we have a topic created with a default configuration, we can start producing records to it! Still from within the container, run the following command, and send your messages.
+
+```console
+[appuser@broker ~]$ kafka-console-producer --bootstrap-server localhost:9092 --topic my-amazing-topic
+>foo
+>bar
+```
