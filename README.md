@@ -128,7 +128,7 @@ You should now be able to access the `control-center` container, which is the Co
 
 > :building_construction: MAYBE MAKE A TOUR OF THE UI
 
-## Produce and Consume Messages using the CLI
+## :recycle: Produce and Consume Messages using the CLI
 
 With Kafka, there are the notions of [Producers](https://docs.confluent.io/platform/current/clients/producer.html) and [Consumers](https://docs.confluent.io/platform/current/clients/consumer.html). Simply put, producers are client applications writing data to the cluster, and consumers are applications reading data from the cluster. Consumers are ultimately doing the work from the data they read (e.g. a Flink application would be a consumer).
 
