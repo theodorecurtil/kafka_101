@@ -190,7 +190,7 @@ foo
 bar
 ```
 
-## Kill the Cluster
+## :arrow_down: Kill the Cluster
 
 Once you have played enough with your Kafka cluster, you might want to bring it down. To do this, `cd` into this project repo again and docker-compose down the infrastructure.
 
