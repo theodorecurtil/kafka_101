@@ -125,3 +125,5 @@ zookeeper           confluentinc/cp-zookeeper:7.2.1                   "/etc/conf
 ```
 
 You should now be able to access the `control-center` container, which is the Confluent UI for Kafka cluster management on [localhost:9021](http://localhost:9021/).
+
+> :building_construction: MAYBE MAKE A TOUR OF THE UI
