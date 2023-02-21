@@ -193,3 +193,7 @@ Once you have played enough with your Kafka cluster, you might want to bring it 
 cd kafka_101
 docker-compose down
 ```
+
+## :next_track_button: What is Coming Next?
+
+In a next blog post, we will see how to - starting from this vanilla Kafka infra - produce avro records to Kafka. Stay tuned! :tv:
