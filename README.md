@@ -9,9 +9,13 @@ The cluster is set up using [Confluent](https://hub.docker.com/u/confluentinc) i
 3. Confluent Schema Registry (for use in later article...)
 4. Confluent Control Center (the UI to interact with the cluster)
 
-Note that Kafka 3.4 introduces the capability to move a Kafka cluster from Zookeeper to KRaft mode. At the time this article is written, Confluent still has not released the new Docker image with Kafka 3.4. As such, we still use Zookeeper in this tutorial. For a discussion on how about Zookeeper and KRaft, refer to [this article](https://www.confluent.io/blog/kafka-without-zookeeper-a-sneak-peek/).
+Note that Kafka 3.4 introduces the capability to move a Kafka cluster from Zookeeper to KRaft mode. At the time this article is written, Confluent still has not released the new Docker image with Kafka 3.4. As such, we still use Zookeeper in this tutorial. For a discussion about Zookeeper and KRaft, refer to [this article](https://www.confluent.io/blog/kafka-without-zookeeper-a-sneak-peek/).
+
+Services will be powered up and orchestrated using docker-compose. Let us quickly review the configurations.
 
 ### Zookeeper
+
+As usual, we need to attach [Zookeeper](https://zookeeper.apache.org/) to our Kafka cluster. Zookeeper is responsible for storing metadata regarding the cluster (e.g. where partitions live, which replica is the leader, etc...). This "extra" service that always needs to be started alongside a Kafka cluster will soon be deprecated; as metadata management will be fully internalized in the Kafka cluster, using the new Kafka Raft Metadata mode, shortened to KRaft.
 
 Confluent configurations available [here](https://docs.confluent.io/platform/current/installation/docker/config-reference.html#zk-configuration).
 
