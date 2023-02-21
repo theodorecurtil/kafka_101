@@ -43,7 +43,7 @@ services:
 
 ### Kafka Server
 
-We configure a single Kafka broker with sensible defaults.
+We also need to configure a single Kafka broker, with a minimum viable configuration. We need to specify the port mappings, and the networking settings (Zookeeper, advertised listeners, etc...). In addition, we set some basic logging and metrics configurations.
 
 Details about the configuration can be found on [Confluent website](https://docs.confluent.io/platform/current/installation/docker/config-reference.html#confluent-enterprise-ak-configuration); and all configurations can be found [here](https://docs.confluent.io/platform/current/installation/configuration/broker-configs.html#ak-broker-configurations-for-cp).
 
@@ -174,6 +174,8 @@ This command will produce 2 messages to the topic `my-amazing-topic` without a k
 One can see that the messages were produced to the topic and are persisted in the topic by navigating to the `Topics` tab.
 
 ![](./pictures/messages_produced.png)
+
+If you click on the `Schema` tab, you will notice that no schema is present. This means that the topic can contain records with different schema, like strings or json strings. No schema is enforced; which is obviously not a good practice in production; hence the need for the `schema-registry` container. But do not worry about it now, we will touch that point in our next blog post where we will be building a small producer application pushing Avro records to Kafka, with schema validation.
 
 ### Consume from the Topic
 
