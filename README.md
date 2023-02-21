@@ -19,7 +19,7 @@ As usual, we need to attach [Zookeeper](https://zookeeper.apache.org/) to our Ka
 
 Confluent's implementation of Zookeeper provides a few configurations, available [here](https://docs.confluent.io/platform/current/installation/docker/config-reference.html#zk-configuration).
 
-In particular, We need to tell Zookeper on which port to listen to connections from clients, in our case Apache Kafka. This is configured with the key `ZOOKEEPER_CLIENT_PORT`. Once this port is chosen, expose the corresponding port in the container. `ZOOKEEPER_TICK_TIME` in milliseconds, is the basic unit of time used by Zookeeper. These 2 configurations alone are enough to enable communication between the Kafka cluster and Zookeeper. The corresponding configuration is available below, as used in our [docker-compose](https://github.com/theodorecurtil/kafka_101/blob/main/docker-compose.yaml) file.
+In particular, We need to tell Zookeper on which port to listen to connections from clients, in our case Apache Kafka. This is configured with the key `ZOOKEEPER_CLIENT_PORT`. Once this port is chosen, expose the corresponding port in the container. This configuration alone is enough to enable communication between the Kafka cluster and Zookeeper. The corresponding configuration is available below, as used in our [docker-compose](https://github.com/theodorecurtil/kafka_101/blob/main/docker-compose.yaml) file.
 
 ```
 version: '3.3'
@@ -32,7 +32,6 @@ services:
       - "2181:2181"
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
-      ZOOKEEPER_TICK_TIME: 2000
   broker:
     ...
   schema-registry:
