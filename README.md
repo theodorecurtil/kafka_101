@@ -32,7 +32,7 @@ services:
       - "2181:2181"
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
-      
+
   broker:
     ...
   schema-registry:
@@ -60,7 +60,6 @@ services:
       - zookeeper
     ports:
       - "9092:9092"
-      - "9101:9101"
       - "29092:29092"
     environment:
       KAFKA_BROKER_ID: 1
