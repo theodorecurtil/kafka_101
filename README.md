@@ -1,6 +1,6 @@
 <br>
 
-[![Button Click]][Link]  [![Button Hover]][Link] 
+[![Button Acosom]][LinkAcosom]
 
 <br>
 
@@ -206,8 +206,8 @@ In a next blog post, we will see how to - starting from this vanilla Kafka infra
 
 <!---------------------------------------------------------------------------->
 
-[Button Hover]: https://img.shields.io/badge/Hover_Over_Me!-37a779?style=for-the-badge
-[Button Click]: https://img.shields.io/badge/Click_Me!-37a779?style=for-the-badge
-[Button Icon]: https://img.shields.io/badge/Installation-EF2D5E?style=for-the-badge&logoColor=white&logo=DocuSign
+[Button Acosom]: https://img.shields.io/badge/Acosom-Read%20blog%20post-orange
+<!-- [Button Click]: https://img.shields.io/badge/Click_Me!-37a779?style=for-the-badge
+[Button Icon]: https://img.shields.io/badge/Installation-EF2D5E?style=for-the-badge&logoColor=white&logo=DocuSign -->
 
-[Link]: # 'Link with example title.'
+[LinkAcosom]: https://acosom.com/blog/getting-started-with-confluents-kafka 'Read on acosom.com'
