@@ -197,3 +197,16 @@ docker-compose down
 ## :next_track_button: What is Coming Next?
 
 In a next blog post, we will see how to - starting from this vanilla Kafka infra - produce avro records to Kafka. Stay tuned! :tv:
+
+<br>
+
+[![Button Click]][Link] 
+[![Button Hover]][Link] 
+
+<br>
+
+<!---------------------------------------------------------------------------->
+
+[Button Hover]: https://img.shields.io/badge/Hover_Over_Me!-37a779?style=for-the-badge
+[Button Click]: https://img.shields.io/badge/Click_Me!-37a779?style=for-the-badge
+[Button Icon]: https://img.shields.io/badge/Installation-EF2D5E?style=for-the-badge&logoColor=white&logo=DocuSign
