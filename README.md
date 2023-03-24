@@ -1,3 +1,9 @@
+<br>
+
+[![Button Click]][Link]  [![Button Hover]][Link] 
+
+<br>
+
 We show how to run a local Kafka cluster using [Docker](https://www.docker.com/) containers. We will also show how to produce and consume events from Kafka using the CLI.
 
 ## :desktop_computer: The Infrastructure
@@ -197,13 +203,6 @@ docker-compose down
 ## :next_track_button: What is Coming Next?
 
 In a next blog post, we will see how to - starting from this vanilla Kafka infra - produce avro records to Kafka. Stay tuned! :tv:
-
-<br>
-
-[![Button Click]][Link] 
-[![Button Hover]][Link] 
-
-<br>
 
 <!---------------------------------------------------------------------------->
 
