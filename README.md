@@ -210,6 +210,6 @@ In a next blog post, we will see how to - starting from this vanilla Kafka infra
 [Button Twitter]: https://img.shields.io/twitter/follow/theodore_curtil?style=social
 [Button Linkedin]: https://img.shields.io/badge/LinkedIn-Follow%20Acosom-blue
 
-[LinkAcosom]: https://acosom.com/blog/getting-started-with-confluents-kafka?utm_source=github&utm_medium=social&utm_campaign=blog 'Read on acosom.com'
+[LinkAcosom]: https://acosom.com/blog/getting-started-with-confluents-kafka/?utm_source=github&utm_medium=social&utm_campaign=blog 'Read on acosom.com'
 [LinkTwitter]: https://twitter.com/theodore_curtil 'Follow me on Twitter :)'
 [LinkLinkedin]: https://ch.linkedin.com/company/acosom 'Follow us on LinkedIn :)'
